@@ -1,0 +1,104 @@
+@font-face
+{
+	font-family:"PF Tempesta Seven";
+	font-style:normal;
+	font-weight:400;
+	src:url(pf_tempesta_seven.eot?) format(eot),url(pf_tempesta_seven.woff) format(woff),url(pf_tempesta_seven.ttf) format(truetype),url(pf_tempesta_seven.svg#PFTempestaSeven) format(svg);
+}
+
+@-webkit-keyframes super-rainbow {
+  0%   { color: #ffff00; } 
+  20%  { color: #ffcd00; }
+  40%  { color: #c3d74b; }
+  60%  { color: #c3d7d7; }
+  80%  { color: #ffc39b; }
+  100% { color: #ffff00; }
+}
+@-moz-keyframes super-rainbow {
+  0%   { color: #ffff00; } 
+  20%  { color: #ffcd00; }
+  40%  { color: #c3d74b; }
+  60%  { color: #c3d7d7; }
+  80%  { color: #ffc39b; }
+  100% { color: #ffff00; }
+}
+@keyframes super-rainbow {
+  0%   { color: #ffff00; } 
+  20%  { color: #ffcd00; }
+  40%  { color: #c3d74b; }
+  60%  { color: #c3d7d7; }
+  80%  { color: #ffc39b; }
+  100% { color: #ffff00; }
+}
+
+
+h1, h2
+{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h1
+{
+    font-family: "PF Tempesta Seven";
+    font-size: 300%;
+    -webkit-animation: super-rainbow 5s infinite linear; 
+    -moz-animation: super-rainbow 5s infinite linear;
+    animation: super-rainbow 10s infinite linear;
+}
+h2
+{
+    font-family: "PF Tempesta Seven";
+    font-size: 100%;
+}
+h3
+{
+    margin-left: 1em;
+}
+body
+{
+    background-color: black;
+    background-image:url("bg_tiles_green.png");
+    /*background-position: 0px 100px;*/
+}
+html, body
+{
+    padding: 0;
+    margin: 0;
+    font-family: "PF Tempesta Seven";
+}
+.content
+{
+    max-width: 640px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    box-shadow: 10px 10px 5px #333333;
+    /*border-radius:15px;*/
+    border: 5px solid black;
+}
+p
+{
+    margin: 20px 20px 20px 20px;
+}
+.legalise
+{
+    font-size: 60%;
+    text-align: center;
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.coverimg
+{
+    float: right;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: teal;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+}

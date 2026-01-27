@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@JiFish">
+    <meta name="twitter:title" content="Astroball!">
+    <meta name="twitter:description" content="Astro Ball is a game I wrote inspired by the 8-bit classic Lunar Pool. Sink balls on to progress through tables and score points. Either single player or competing with up to 6 players.">
+    <meta name="twitter:image" content="http://astroball.jifish.co.uk/thumb.jpg">
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c4b4b1a37ad1fe8"></script>
+	<title>Astro Ball</title>
+	<!-- Matomo -->
+	<script>
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="//a.jifish.co.uk/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '1']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
+</head>
+
+<body>
+<div class="content">
+    <h1>Astro Ball</h1>
+    <h2>A Lunar Pool/Ball Clone</h2>
+    <p>Astro Ball is a game I wrote inspired by the 8-bit classic <a href="http://www.mobygames.com/game/msx/lunar-pool">Lunar Pool</a>. Sink balls on to progress through tables and score points. Either single player or competing with up to 6 players.</p>
+    <div id="muteYouTubeVideoPlayer" class="coverimg"></div>
+    <div><h3>Features</h3>
+    <ul>
+        <li>5 tables, plus an additional 20 to unlock</li>
+        
+        <li>Authentic strange physics.</li>
+        <li>CRT-filters for a retro feel.</li>
+        <li>Secrets to discover.</li>
+        <li>Chiptune grooves from <a href="http://rolemusic.sawsquarenoise.com/">rolemusic</a>.</li>
+    </ul></div>
+    <div><h3>Gameplay</h3>
+    <p>Astro Ball attempts to replicate Lunar Pool's unique feel. The physics are closer to air hockey than a traditional ball game. Tables vary in shape and ball placement. Balls can be sunk in any order. The number on the ball represents it's values in points. Each player has 3 balls and can lose a ball put sinking the cue ball or failing to sink another ball 3 turns in a row.</p></div>
+    <div><h3>Downloads</h3>
+    <ul>
+        <li><a href="astroball_win.zip">Windows XP/Vista/7/8/10</a></li>
+        <li>Other versions to come...</li>
+    </ul></div>
+    <div><h3>Contact</h3>
+    <p>If you enjoyed this game, I'd love to hear from you. Send me a tweet <a href="https://twitter.com/intent/tweet?screen_name=JiFish&amp;hashtags=HeroesAndVillains">@JiFish</a>.</p></div>
+    <div><h3>Other Games I've created</h3>
+    <ul>
+    <li><a href="https://gawm.link/">Getting Away With Murder</a> - A co-operative role-play game of drama, wit and mystery.</li>
+    <li><a href="https://zen.jifish.co.uk/">Zen Island</a> - A chill puzzle, exploration and organisation game.</li>
+    <li><a href="http://fiasco.jifish.co.uk/">Heroes and Villains</a> a playset for Fiasco.</li>
+    <li><a href="http://8bit-adventure.jifish.co.uk/">An 8-Bit Adventure</a> a comedy Dungeons &amp; Dragons Module.</li>
+    </ul>
+    </div>
+    <div><h3>Share</h3>
+    <!-- AddThis Button BEGIN --><div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="margin-left:20px;"><a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c4b4b1a37ad1fe8" class="addthis_button_compact"></a><a class="addthis_button_reddit"></a><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_tumblr"></a><a class="addthis_button_google_plusone" g:plusone:count="false"></a></div><!-- AddThis Button END --></div>
+    <div class="legalise">This game is copyright Joseph Fowler.<br/>The music is rolemusic's "The Black Dot" avalible under a Creative Commons Attribution Licence.</div>
+</div>
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'Qjri7vn3UEs', // YouTube Video ID
+    width: 320,               // Player width (in px)
+    height: 240,              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 2,        // Show pause/play buttons in player
+      showinfo: 0,
+      modestbranding: 1,
+      loop: 1,
+      playsinline: 1,
+      autohide: 0,
+      playlist: 'Qjri7vn3UEs',
+      iv_load_policy: 3
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+</script>
+</body>
+</html>
