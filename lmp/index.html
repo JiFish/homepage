@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leanman Pocket</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #container {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #666;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            width: 480px;
+            height: 432px;
+        }
+        body.palette-classic canvas {
+            filter: sepia(1) saturate(1.2) hue-rotate(45deg) brightness(0.9) contrast(1.35);
+        }
+        #screen-wrap {
+            position: relative;
+            width: 480px;
+            height: 432px;
+            margin: 0 auto;
+        }
+        #start-overlay {
+            position: absolute;
+            inset: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ddd;
+            background: rgba(0, 0, 0, 0.72);
+            font-size: 18px;
+            cursor: pointer;
+            user-select: none;
+        }
+        #start-overlay.pressed {
+            display: none;
+        }
+        #info {
+            color: #aaa;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #controls {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #controls h3 {
+            color: #aaa;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+        #player-options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+            color: #aaa;
+            font-size: 13px;
+        }
+        #player-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        #volume-slider {
+            width: 120px;
+        }
+        #palette-toggle {
+            padding: 6px 12px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #ddd;
+            background: #333;
+            cursor: pointer;
+        }
+        #palette-toggle:hover {
+            background: #3d3d3d;
+        }
+        #controls table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        #controls td {
+            padding: 6px 10px;
+            text-align: left;
+            color: #999;
+            border-bottom: 1px solid #444;
+        }
+        #controls tr:last-child td {
+            border-bottom: none;
+        }
+        #controls td:first-child {
+            font-weight: bold;
+            color: #aaa;
+            width: 50%;
+        }
+        #controls td:last-child {
+            color: #66dd66;
+            font-family: monospace;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="status" style="color: #aaa; font-size: 12px; height: 20px;"></div>
+        <div id="screen-wrap">
+            <canvas id="gameboy" width="160" height="144"></canvas>
+            <div id="start-overlay">Click or press a mapped key to start</div>
+        </div>
+        <div id="game-name" style="color: #666; font-size: 12px; margin-top: 5px;"></div>
+        <div id="error" style="color: #f00; font-size: 12px; margin-top: 5px; display: none;"></div>
+        <div id="info" style="color: #aaa; margin-top: 10px; font-size: 14px;">Leanman Pocket</div>
+        <div id="player-options">
+            <button id="palette-toggle" type="button">Palette: Default</button>
+            <label>
+                Volume
+                <input id="volume-slider" type="range" min="0" max="100" value="80">
+                <span id="volume-value">80%</span>
+            </label>
+        </div>
+
+        <div id="controls">
+            <h3>Keyboard Mapping</h3>
+            <table>
+                <tr><td>A</td><td>Z / K</td></tr>
+                <tr><td>B</td><td>X / L</td></tr>
+                <tr><td>START</td><td>M / Enter</td></tr>
+                <tr><td>SELECT</td><td>N / Backspace</td></tr>
+                <tr><td>Directional Pad</td><td>Arrow Keys / W/A/S/D</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="vendor/wasmboy/wasmboy.wasm.iife.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>
