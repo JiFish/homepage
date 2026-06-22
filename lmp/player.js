@@ -4,7 +4,7 @@
     const PALETTE_STORAGE_KEY = "leanman-pocket-palette";
     const VOLUME_STORAGE_KEY = "leanman-pocket-volume";
     const CLASSIC_PALETTE_CLASS = "palette-classic";
-    const DEFAULT_VOLUME = 80;
+    const DEFAULT_VOLUME = 25;
     const keyState = {
         UP: false,
         RIGHT: false,
