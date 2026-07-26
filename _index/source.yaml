@@ -1,0 +1,125 @@
+sections:
+  - heading_tag: h2
+    heading: Tabletop Games
+    cards:
+      - title: Getting Away With Murder
+        image: image/gawm.png
+        image_title: Getting Away With Murder
+        text: A co-operative murder mystery role-play game. With <a href="https://thad.frogley.info/">Thad Frogley</a>.
+        href: https://gawm.link/
+      - title: Heroes and Villians
+        image: image/heroes.png
+        image_title: Heroes and Villians
+        text: A superhero themed Fiasco playset.
+        href: https://www.drivethrurpg.com/en/product/332706/heroes-and-villains-a-fiasco-playset?affiliate_id=2829123
+      - title: The First Men in the Moon
+        image: image/fmitm.png
+        image_title: The First Men in the Moon
+        text: A steampunk, one-page TTRPG, set after the events of the book.
+        href: https://jifish.itch.io/moon
+      - title: With Strange Aeons
+        image: image/wga-tall.png
+        image_title: With Strange Aeons
+        text: A one-page lovecraftian ttrpg. With <a href="https://thad.frogley.info/">Thad Frogley</a>.
+        href: https://jifish.itch.io/with-strange-aeons
+  - heading_tag: h2
+    heading: 5e Compatible TTRPG Stuff
+    cards:
+      - title: Ataland (WIP)
+        image: image/ataland.png
+        image_title: Ataland (WIP)
+        text: A 5e-compatible TTRPG setting using procedural generation. With <a href="https://thad.frogley.info/">Thad Frogley</a>.
+        href: https://ataland.quest/
+      - title: Mis-Spells, Crap Cantrips & The Wizard's Wager
+        image: image/eqt.png
+        image_title: Cuuko's Magic Emporium
+        text: A selection of silly spells for your 5e games.
+        href: https://www.drivethrurpg.com/en/product/524513/mis-spells-crap-cantrips-the-wizard-s-wager-5e?affiliate_id=2829123
+      - title: Cuuko's Magic Emporium
+        image: image/cme.png
+        image_title: Cuuko's Magic Emporium
+        text: 100 Magic Items and a shop for your 5e games.
+        href: https://www.drivethrurpg.com/product/443908/Cuukos-Magic-Emporium-5E?affiliate_id=2829123
+  - heading_tag: h3
+    heading: Dungeons &amp; Dragons Homebrew
+    cards:
+      - title: An 8-Bit Adventure
+        image: image/8bit-advent.png
+        image_title: An 8-Bit Adventure
+        text: A short comedic 5e D&D scenario. Includes Fantasy Grounds module!
+        href: 8bit-adventure/
+      - title: Kobold Facts!
+        image: image/kobold-facts.png
+        image_title: Kobold Facts!
+        text: A magic item to prank your players with.
+        href: kobold-facts-v4.pdf
+      - title: Acquisitions Inc. Trading Cards
+        image: image/ai-cards.png
+        image_title: Acquisitions Inc. Trading Cards
+        text: Homebrew rules for collectable cards. 2<sup>nd</sup> Edition!
+        href: acqinc-trading-cards-2e.pdf
+  - heading_tag: h2
+    heading: Computer Games
+    cards:
+      - title: Artemis
+        image: image/artemis.png
+        image_title: Artemis
+        text: A Fantasy Microcomputer inspired by British 8-bit microcomputers.
+        href: https://jifish.github.io/artemis/
+      - title: Dopewars 2020
+        image: image/dope-wars.png
+        image_title: Dopewars 2020
+        text: An online dopewars clone set in a satirical retro-futuristic dystopia.
+        href: dw/
+        commented: true
+      - title: Astroball!
+        image: image/astropool.png
+        image_title: Astroball!
+        text: A retro-styled pool-like game, inspired by LunarPool.
+        href: astroball/
+      - title: Zen Island
+        image: image/zen.png
+        image_title: Zen Island
+        text: A chill puzzle, exploration and organisation game.
+        href: zen/
+  - heading_tag: h2
+    heading: Game Mods
+    cards:
+      - title: Fantasy Grounds Stuff
+        image: image/forge.png
+        image_title: Fantasy Grounds Forge
+        text: Modules, Extensions, and Assets for Fantasy Grounds VTT
+        href: https://forge.fantasygrounds.com/crafter/518/view-profile
+      - title: Babel Book Loot
+        image: image/babel.png
+        image_title: Babel Book Loot
+        text: A customisable pre-written book loot datapack for Minecraft.
+        href: https://modrinth.com/datapack/babel
+      - title: My Steam Workshop
+        image: image/steam.png
+        image_title: My Steam Workshop
+        text: Mostly Tabletop Simulator mods.
+        href: https://steamcommunity.com/id/JiFish/myworkshopfiles/
+      - title: MCDungeon
+        image: image/mcdungeon.png
+        image_title: MCDungeon
+        text: A procedural dungeon generator for Minecraft. (Contributor, Outdated.)
+        href: https://github.com/orphu/mcdungeon
+  - heading_tag: h2
+    heading: Etcetera
+    cards:
+      - title: GitHub
+        image: image/github.png
+        image_title: GitHub
+        text: Tinkering with code
+        href: https://github.com/JiFish/
+      - title: Clacks Tester
+        image: image/clacks-tester.png
+        image_title: Clacks Tester
+        text: A simple webservice to check for X-Clacks-Overhead headers.
+        href: https://clacks.jifish.co.uk/
+      - title: The SCUMM Bar
+        image: image/scummbar.png
+        image_title: The SCUMM Bar
+        text: Point 'n' Click playthough videos / guides.
+        href: https://www.youtube.com/c/THESCUMMBAR
